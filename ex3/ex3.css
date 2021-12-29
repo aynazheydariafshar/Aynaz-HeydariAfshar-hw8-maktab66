@@ -6,6 +6,7 @@
     transform-origin: right bottom;
     transition: transform 5s;
     width: 100px;
+    animation: move 5s 2s infinite alternate forwards;
 }
 
 .continer{
@@ -21,3 +22,7 @@
     transform: scale(2, 2);
 }
 
+@keyframes move {
+    from {background-color: rgb(4, 65, 22);}
+    to {background-color: rgb(253, 208, 5);}
+}

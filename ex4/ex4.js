@@ -3,6 +3,10 @@ const ingExtractor = (input) => {
     .split(" ")
     .filter((word) => {
         let char = word.toLowerCase().replace("ing", "");
+
+        //delete a, e , i , o , u with RegEx
+        //when delete ing and word does not have a, e , i , o , u this word does not have mean
+        
         if (char.length === char.replace(/[aeiou]/g, "").length) {
             return false;
         }

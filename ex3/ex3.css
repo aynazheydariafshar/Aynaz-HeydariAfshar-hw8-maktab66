@@ -8,7 +8,16 @@
     width: 100px;
 }
 
+.continer{
+    transition: transform 5s;
+}
+
 .item:hover {
     transform: rotate(360deg);
     cursor: pointer;
 }
+
+.continer:hover{
+    transform: scale(2, 2);
+}
+

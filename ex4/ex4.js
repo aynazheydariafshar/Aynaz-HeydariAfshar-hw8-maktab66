@@ -5,7 +5,7 @@ const ingExtractor = (input) => {
         let char = word.toLowerCase().replace("ing", "");
 
         //delete a, e , i , o , u with RegEx
-        //when delete ing and word does not have a, e , i , o , u this word does not have mean
+        //when delete ing and if word does not have a, e , i , o , u so it does not have mean
         
         if (char.length === char.replace(/[aeiou]/g, "").length) {
             return false;
